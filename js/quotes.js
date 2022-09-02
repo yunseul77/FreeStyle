@@ -1,44 +1,27 @@
 const quotes = [
     {
-      quote: "The way to get started is to quit talking and begin doing.",
-      author: "Walt Disney",
+      quote: "삶이 있는 한 희망은 있다.",
+      author: "키케로",
     },
     {
-      quote: "Life is what happens when you're busy making other plans.",
-      author: "John Lennon",
+      quote: "산다는것 그것은 치열한 전투이다.",
+      author: "로망로랑",
     },
     {
-      quote:
-        "The world is a book and those who do not travel read only one page.",
-      author: "Saint Augustine",
+      quote: "언제나 현재에 집중할수 있다면 행복할것이다.",
+      author: "파울로 코엘료",
     },
     {
-      quote: "Life is either a daring adventure or nothing at all.",
-      author: "Helen Keller",
+      quote: "피할수 없으면 즐겨라.",
+      author: "로버트 엘리엇",
     },
     {
-      quote: "To Travel is to Live",
-      author: "Hans Christian Andersen",
+      quote: "좋은 성과를 얻으려면 한 걸음 한 걸음이 힘차고 충실하지 않으면 안 된다",
+      author: "단테",
     },
     {
-      quote: "Only a life lived for others is a life worthwhile.",
-      author: "Albert Einstein",
-    },
-    {
-      quote: "You only live once, but if you do it right, once is enough.",
-      author: "Mae West",
-    },
-    {
-      quote: "Never go on trips with anyone you do not love.",
-      author: "Hemmingway",
-    },
-    {
-      quote: "We wander for distraction, but we travel for fulfilment.",
-      author: "Hilaire Belloc",
-    },
-    {
-      quote: "Travel expands the mind and fills the gap.",
-      author: "Sheda Savage",
+      quote: "자신감 있는 표정을 지으면 자신감이 생긴다.",
+      author: "찰스다윈",
     },
   ];
   

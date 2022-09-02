@@ -1,0 +1,21 @@
+.hidden {
+    display: none;
+  }
+
+body {
+    margin : 0;
+    background: url("../img/space1.jpg") no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+#clock-form {
+
+}
+
+#greetings {
+
+}
+
+#quote {
+
+}

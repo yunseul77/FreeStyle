@@ -1,6 +1,12 @@
 .hidden {
-    display: none;
+   display: none;
   }
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 body {
     margin : 0;
@@ -10,23 +16,23 @@ body {
     background-size: cover;
     
 }
+
 #clock-form {
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height:25%;
+  color: azure;
 }
 
 #greetings {
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height:25%;
+  color: azure;
+}
+#todo, #todo-list {
+  height:15%;
+  color: azure;
 }
 
 #quote {
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 450px;
+  color: azure;
 }
+

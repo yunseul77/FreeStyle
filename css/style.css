@@ -14,25 +14,29 @@ body {
     width: 100vw;
     background: url("../img/space1.jpg") no-repeat center fixed;
     background-size: cover;
-    
 }
 
 #clock-form {
-  height:25%;
+  height:100px;
   color: azure;
 }
 
 #greetings {
-  height:25%;
+  height:100px;
   color: azure;
 }
 #todo, #todo-list {
-  height:15%;
+  height:100px;
+  width:200px;
   color: azure;
 }
 
 #quote {
-  height: 450px;
+  height:100px;
   color: azure;
 }
 
+#weather {
+  height:100px;
+  color: azure;
+}

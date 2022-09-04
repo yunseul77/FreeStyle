@@ -3,9 +3,10 @@ const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "todos";
-const toDos = [];
 
-//스토리지에 저장
+let toDos = [];
+
+// 스토리지에 저장
 function saveToDos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
@@ -13,6 +14,8 @@ function saveToDos() {
 function deleteToDo(e) {
     const li = e.target.parentElement;
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
 }
 
 // 리스트 만들기
@@ -29,7 +32,7 @@ function paintToDo(newTodo) {
     toDoList.appendChild(li);
 }
 
-//메모기능
+// 메모기능
 function handleToDoSubmit(e) {
     e.preventDefault();
     const newTodo = toDoInput.value;
@@ -48,8 +51,13 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
+// 스토리지내 메모데이터 유무확인
 if(savedToDos !== null ) {
     const parsedToDos = JSON.parse(savedToDos);
-    parsedToDos.foEach(paintToDo);
+    toDos = parsedToDos;
+    parsedToDos.forEach(paintToDo);
 }
+
+
+
 

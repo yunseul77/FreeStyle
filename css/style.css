@@ -73,6 +73,15 @@ input::placeholder {
   font-size: 150px;
 }
 
+#clock-seconds {
+  margin: 0;
+  border: 0;
+  position: relative;
+  top: 345px;
+  font-size: 75px;
+  
+}
+
 #greetings {
   color: azure;
   font-size: 20px;

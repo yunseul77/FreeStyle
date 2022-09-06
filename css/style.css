@@ -2,41 +2,100 @@
    display: none;
   }
 
-.flex{
+.flex {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+}
+
+.absolute {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    margin : 0;
-    height: 100vh;
-    width: 100vw;
-    background: url("../img/space1.jpg") no-repeat center fixed;
-    background-size: cover;
+  padding : 0;
+  margin: 0;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background: url("../img/space1.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  background-color: rgb(233, 233, 233);
+}
+
+input {
+  width: 250px;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: azure;
+}
+input:focus {
+    background-color: azure;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+input::placeholder {
+  color: rgb(205, 205, 205);
 }
 
 #clock-form {
-  height:100px;
   color: azure;
+  font-size: 150px;
 }
 
 #greetings {
-  height:100px;
   color: azure;
+  font-size: 20px;
 }
-#todo, #todo-list {
-  height:100px;
-  width:200px;
+
+#todo-list {
+  color: azure;
+  font-size: 15px;
+  margin: 0;
+  outline-color: azure;
+}
+
+#weather {
+  position:absolute;
+  top: 10px;
+  right: 10px;
   color: azure;
 }
 
 #quote {
-  height:100px;
   color: azure;
-}
-
-#weather {
-  height:100px;
-  color: azure;
+  position:absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 15px;
 }

@@ -7,16 +7,18 @@ function onGeoOk(position) {
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
     fetch(url).then(response => response.json())
     .then(data => {
-        const weather = document.querySelector("#weather span:first-child")
-        const city = document.querySelector("#weather span:last-child")
+        const city = document.querySelector("#weather p:first-child")
+        const weather = document.querySelector("#weather p:last-child")
         city.innerText = data.name;
-        weather.innerText = `${data.weather[0].main} / ${data.main.temp}도`;
+        weather.innerText = `/ ${data.weather[0].main} ${Math.round(data.main.temp)}ºC`;
     });
 };
 
 //위치정보 로드 실패
 function onGeoError() {
-    alert("위치정보를 찾을 수 없습니다.")
+    const errorMsg = document.querySelector("#weather p:first-child")
+    errorMsg.innerText = "위치정보를 찾을 수 없습니다."
 };
+
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
